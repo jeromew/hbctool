@@ -1,5 +1,6 @@
 
 from hbctool.util import *
+from hbctool.hbc.hbc94 import HBC94
 from hbctool.hbc.hbc90 import HBC90
 from hbctool.hbc.hbc85 import HBC85
 from hbctool.hbc.hbc84 import HBC84
@@ -17,6 +18,7 @@ INIT_HEADER = {
 BYTECODE_ALIGNMENT = 4
 
 HBC = {
+    94: HBC94,
     90: HBC90,
     85: HBC85,
     84: HBC84,
